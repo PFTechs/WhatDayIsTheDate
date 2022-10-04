@@ -132,6 +132,7 @@
             this.Controls.Add(this.BtnTellMe);
             this.Controls.Add(this.UserPrompt);
             this.Controls.Add(this.InputBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
             this.Text = "What Day Is This Date? - PF Techs©";
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
