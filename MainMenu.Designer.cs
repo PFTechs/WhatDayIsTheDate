@@ -57,11 +57,11 @@
             this.UserPrompt.AutoSize = true;
             this.UserPrompt.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UserPrompt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UserPrompt.Location = new System.Drawing.Point(205, 201);
+            this.UserPrompt.Location = new System.Drawing.Point(194, 201);
             this.UserPrompt.Name = "UserPrompt";
-            this.UserPrompt.Size = new System.Drawing.Size(425, 36);
+            this.UserPrompt.Size = new System.Drawing.Size(439, 36);
             this.UserPrompt.TabIndex = 1;
-            this.UserPrompt.Text = "Please enter the date (DD/MM/YYY)";
+            this.UserPrompt.Text = "Please enter the date (DD/MM/YYYY)";
             // 
             // BtnTellMe
             // 
@@ -110,13 +110,14 @@
             // 
             // DisplayResult
             // 
-            this.DisplayResult.AutoSize = true;
+            this.DisplayResult.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DisplayResult.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DisplayResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.DisplayResult.Location = new System.Drawing.Point(247, 427);
+            this.DisplayResult.Location = new System.Drawing.Point(40, 427);
             this.DisplayResult.Name = "DisplayResult";
-            this.DisplayResult.Size = new System.Drawing.Size(0, 68);
+            this.DisplayResult.Size = new System.Drawing.Size(700, 68);
             this.DisplayResult.TabIndex = 6;
+            this.DisplayResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainMenu
             // 
