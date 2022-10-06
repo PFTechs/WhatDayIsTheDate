@@ -43,14 +43,16 @@
             // 
             this.InputBox.BackColor = System.Drawing.SystemColors.MenuBar;
             this.InputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.InputBox.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.InputBox.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.InputBox.Location = new System.Drawing.Point(294, 264);
             this.InputBox.Margin = new System.Windows.Forms.Padding(5);
             this.InputBox.MinimumSize = new System.Drawing.Size(200, 50);
             this.InputBox.Name = "InputBox";
+            this.InputBox.PlaceholderText = "DD/MM/YYYY";
             this.InputBox.Size = new System.Drawing.Size(200, 50);
             this.InputBox.TabIndex = 0;
             this.InputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.InputBox.TextChanged += new System.EventHandler(this.InputBox_OnTextChange);
             // 
             // UserPrompt
             // 
@@ -142,13 +144,12 @@
         }
 
         #endregion
-
-        private TextBox InputBox;
         private Label UserPrompt;
         private Button BtnTellMe;
         private PictureBox Logo;
         private Label AppName;
         private Label Disclaimer;
         private Label DisplayResult;
+        public TextBox InputBox;
     }
 }
